@@ -1,14 +1,31 @@
 # User Validator
-Library to validate username, email and passwords
+Library to validate username, email and passwords.
 
-Show me the code!!!
-----------
+Java library to validate typical user fields. Useful for validation when registering new users or logging in.
+
+#Show me the code!!!
 
 First, instance the validator:
 
 ```java
 
 UserValidator validator = UserValidator.builder().build();
+
+```
+
+So, how are you using it?
+
+```java
+
+try {
+  if (validator.validateUsername(username) && 
+    validator.validateEmail(email) && 
+    validator.validatePassword(username, password)) {
+      // TODO login, register or edit user
+}
+  } catch (RuntimeException error) {
+      // TODO show something to the user!!!
+}
 
 ```
 
