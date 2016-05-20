@@ -1,7 +1,5 @@
 # User Validator
-Library to validate username, email and passwords.
-
-Java library to validate typical user fields. Useful for validation when registering new users or logging in.
+Library to validate username, email and passwords
 
 Show me the code!!!
 ----------
