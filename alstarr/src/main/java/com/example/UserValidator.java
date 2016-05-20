@@ -51,8 +51,8 @@ public class UserValidator {
   //region Username
   public Boolean validateUsername(String username) {
     validateUsernameHasTheCorrectFormat(username);
-    validateUsernameHasMoreThanThreeCharacters(username);
-    validateUsernameHasLessThan25Characters(username);
+    validateUsernameHasMoreThanExpectedCharacters(username);
+    validateUsernameHasLessThanExpectedCharacters(username);
     validateUsernameIsNotNull(username);
     return true;
   }
@@ -73,13 +73,13 @@ public class UserValidator {
     }
   }
 
-  private void validateUsernameHasMoreThanThreeCharacters(String username) {
+  private void validateUsernameHasMoreThanExpectedCharacters(String username) {
     if (username != null && username.length() < this.usernameMinimumLength) {
       throw new InvalidUsernameLengthException("Username is too short");
     }
   }
 
-  private void validateUsernameHasLessThan25Characters(String username) {
+  private void validateUsernameHasLessThanExpectedCharacters(String username) {
     if (username != null && username.length() > this.usernameMaximumLength) {
       throw new InvalidUsernameLengthException("Username is too long");
     }
@@ -90,8 +90,8 @@ public class UserValidator {
   public Boolean validatePassword(String username, String password) {
     validatePassWordHasNotInvalidCharacters(password);
     validatePasswordIsDifferentFromUsername(username, password);
-    validatePasswordHasLesThanTwentyCharacters(password);
-    validatePasswordHasMoreThanSixCharacters(password);
+    validatePasswordHasLesThanExpectedCharacters(password);
+    validatePasswordHasMoreThanExpectedCharacters(password);
     validatePasswordNotNull(password);
     return true;
   }
@@ -112,13 +112,13 @@ public class UserValidator {
     }
   }
 
-  private void validatePasswordHasLesThanTwentyCharacters(String password) {
+  private void validatePasswordHasLesThanExpectedCharacters(String password) {
     if (password != null && password.length() > this.passwordMaximumLength) {
       throw new InvalidPasswordLengthException("Password too long");
     }
   }
 
-  private void validatePasswordHasMoreThanSixCharacters(String password) {
+  private void validatePasswordHasMoreThanExpectedCharacters(String password) {
     if (password != null && password.length() < this.passwordMinimumLength) {
       throw new InvalidPasswordLengthException("Password too short");
     }
