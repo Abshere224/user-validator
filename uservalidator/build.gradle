@@ -15,10 +15,10 @@ buildscript {
 }
 
 publish {
-    userOrg = 'artjimlop'
-    groupId = 'com.artjimlop'
-    artifactId = 'AllStarr'
-    publishVersion = '0.0.1'
+    userOrg = 'shootrlabs'
+    groupId = 'com.shootr'
+    artifactId = 'user-validator'
+    publishVersion = '1.0.0'
     desc = 'Library to validate username, email and passwords'
-    website = 'https://github.com/artjimlop'
+    website = 'https://github.com/ShootrNetwork/user-validator'
 }

@@ -23,7 +23,7 @@ try {
     validator.validatePassword(username, password)) {
       // TODO login, register or edit user
 }
-  } catch (RuntimeException error) {
+  } catch (UsernameIsNullException exception) { // Catch all exceptions you're interested to handle
       // TODO show something to the user!!!
 }
 

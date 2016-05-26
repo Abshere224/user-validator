@@ -132,14 +132,14 @@ UserValidator.builder()
 
 * Grab via Gradle:
 ```groovy
-compile 'com.artjimlop:AllStarr:0.0.1'
+compile 'com.shootr:user-validator:1.0.0'
 ```
 * Grab via Maven:
 ```xml
 <dependency>
-  <groupId>com.artjimlop</groupId>
-  <artifactId>AllStarr</artifactId>
-  <version>0.0.1</version>
+  <groupId>com.shootr</groupId>
+  <artifactId>user-validator</artifactId>
+  <version>1.0.0</version>
   <type>pom</type>
 </dependency>
 ```
