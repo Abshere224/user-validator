@@ -3,7 +3,8 @@ Library to validate username, email and passwords.
 
 Java library to validate typical user fields. Useful for validation when registering new users or logging in.
 
-#Show me the code!!!
+#Show me the code!!!!
+Help
 
 First, instance the validator:
 
